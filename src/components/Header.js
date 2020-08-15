@@ -1,20 +1,28 @@
 import React from 'react';
+import { Avatar } from '@material-ui/core';
+import AccessTimeIcon from '@material-ui/icons/AccessTime';
+import SearchIcon from '@material-ui/icons/Search';
+import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 
-function Header() {
+const Header = () => {
   return (
     <div className="header">
       <div className="header__left">
-        Avatar
+        <Avatar
+          className="header__avatar"
+          alt="Prashant Kamble"
+        />
+        <AccessTimeIcon />
       </div>
       <div className="header__middle">
-        Search
-        <input type="text" placeholder="Search in Developer" />
+        <SearchIcon />
+        <input type="text" placeholder="Search Develop Space" />
       </div>
       <div className="header__right">
-        Help
+        <HelpOutlineIcon />
       </div>
     </div>
   )
 }
 
-export default Header
+export default Header;
