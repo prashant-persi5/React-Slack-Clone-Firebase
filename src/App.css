@@ -4,7 +4,15 @@ body {
   --slack-input-bg: #421f44;
   --slack-hover: #340e36;
   --slack-online: green;
+  overflow: hidden;
 }
+
+/* App Start */
+.app__body {
+  display: flex;
+  height: 100vh;
+}
+/* App End */
 
 /* Header Start */
 .header {
@@ -64,6 +72,7 @@ body {
   background-color: var(--slack-bg);
   border-top: 1px solid #49274b;
   max-width: 260px;
+  flex: 0.3;
 }
 
 .sidebar__header {
@@ -141,3 +150,41 @@ body {
   font-weight: 500;
 }
 /* Sidebar End */
+
+/* Chat Start */
+.chat {
+  flex: 0.7;
+  flex-grow: 1;
+  overflow-y: scroll;
+  padding-bottom: 150px;
+}
+
+.chat__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+.chat__headerRight > p {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.chat__headerRight > p > .MuiSvgIcon-root {
+  margin-right: 5px !important;
+  font-size: 16px;
+}
+
+.chat__channelName {
+  display: flex;
+  text-transform: lowercase;
+}
+
+.chat__channelName > .MuiSvgIcon-root {
+  margin-left: 10px;
+  font-size: 18px;
+}
+/* Chat End */
