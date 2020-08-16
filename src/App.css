@@ -242,3 +242,28 @@ body {
   font-size: 13px;
 }
 /* Message End */
+
+/* ChatInput Start */
+.chatInput {
+  border-radius: 20px;
+}
+
+.chatInput > form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.chatInput > form > input {
+  position: fixed;
+  bottom: 10px;
+  width: 60%;
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 20px;
+}
+
+.chatInput > form > button {
+  display: none !important;
+}
+/* ChatInput End */
